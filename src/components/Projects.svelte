@@ -17,12 +17,12 @@
   }
 
   const links = {
-    link1 : `https://github.com/nithin-sudarsan`,
-    link2 : `https://github.com/nithin-sudarsan`,
-    link3 : `https://github.com/nithin-sudarsan`,
-    link4 : `https://github.com/nithin-sudarsan`,
-    link5 : `https://github.com/nithin-sudarsan`,
-    link6 : `https://github.com/nithin-sudarsan`,
+    link1 : `https://github.com/nithin-sudarsan/javelin-throw-analysis`,
+    link2 : `https://github.com/nithin-sudarsan/convolutional-neural-network`,
+    link3 : `https://github.com/nithin-sudarsan/linear-regression-from-scratch`,
+    link4 : `https://github.com/nithin-sudarsan/patient-monitoring-system`,
+    link5 : `https://github.com/nithin-sudarsan/api-playground`,
+    link6 : `https://github.com/nithin-sudarsan/data-mapper`,
   }
 </script>
 
@@ -56,6 +56,7 @@
   .projects {
     display: grid;
     grid-template-columns: auto auto auto; 
+    margin: 20px 0px;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.1);
