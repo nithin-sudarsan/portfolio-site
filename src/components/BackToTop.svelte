@@ -4,7 +4,10 @@
     let hidden = true;
 
     function goTop() {
-        document.body.scrollIntoView();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     function scrollContainer() {
@@ -27,26 +30,26 @@
 
 <style>
     .back-to-top {
-    opacity: 1;
-    transition: opacity 0.5s, visibility 0.5s;
-    position: fixed;
-    z-index: 99;
-    right: 20px;
-    user-select: none;
-    bottom: 20px;
-    color: white;
-  }
+        opacity: 1;
+        transition: opacity 0.5s, visibility 0.5s;
+        position: fixed;
+        z-index: 99;
+        right: 20px;
+        user-select: none;
+        bottom: 20px;
+        color: white;
+    }
 
-  .back-to-top.hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
+    .back-to-top.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
 
-  .back-to-top:hover {
-    cursor: pointer;
-  }
+    .back-to-top:hover {
+        cursor: pointer;
+    }
 
-  .back-to-top-btn {
+    .back-to-top-btn {
         background-color: lightgray;
         border-radius: 5px;
         font-family: monospace;
@@ -55,7 +58,17 @@
         font-size: large;
         padding: 10px;
         padding-bottom: 0px;
+        transition: transform 0.3s ease;
     }
+
+    .back-to-top-btn:hover {
+        transform: translateY(-3px);
+    }
+
+    .back-to-top-img {
+    height: 25px;
+    width: 25px;
+}
 
 
 </style>
@@ -65,8 +78,8 @@
     <div class="back-to-top-btn">
         <img
         src="{img}"
-        alt="Profile"
-        class="profilePicture"
+        alt="Back to top"
+        class="back-to-top-img"
         />
     </div>
 </div>
