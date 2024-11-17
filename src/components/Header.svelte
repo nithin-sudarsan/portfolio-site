@@ -108,6 +108,7 @@
         border: none;
         font-size: large;
         margin: 10px;
+        color: black;
     }
 
     .secondaryToggleButton {
@@ -128,7 +129,7 @@
 
     .profilePicture{
         border-radius: 100%;
-        height: 100px;
+        height: 110px;
         margin: 5 px;
     }
 
