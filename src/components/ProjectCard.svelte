@@ -48,11 +48,12 @@
     text-transform: capitalize;
     margin: 0;  /* Remove default margin */
     margin-bottom: 10px;
+    font-family: "Cousine", monospace;
   }
 
   .project-desc {
     margin: 0;  /* Remove default margin */
-    opacity: 80%;
+    opacity: 60%;
   }
 
   a {
