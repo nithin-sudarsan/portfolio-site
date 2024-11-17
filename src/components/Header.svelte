@@ -118,6 +118,8 @@
         border: none;
         font-size: large;
         margin: 10px;
+        color: black;
+        text-decoration: none;
     }
     
     .toggleButton:hover, .secondaryToggleButton:hover{
