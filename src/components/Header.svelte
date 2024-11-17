@@ -115,7 +115,6 @@
         border-radius: 5px;
         font-family: monospace;
         height: 40px;
-        /* width: 160px; */
         border: none;
         font-size: large;
         margin: 10px;

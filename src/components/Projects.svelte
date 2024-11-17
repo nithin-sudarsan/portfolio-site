@@ -57,6 +57,7 @@
     display: grid;
     grid-template-columns: auto auto auto; 
     margin: 20px 0px;
+    justify-items: center;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.1);
@@ -76,7 +77,7 @@
 
 
 
-  @media (max-width: 878px) {
+  @media (max-width: 1024px) {
     .projects {
       grid-template-columns: auto auto; 
     }
