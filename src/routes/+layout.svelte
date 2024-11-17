@@ -44,7 +44,6 @@
     :global(hr) {
         width: 90%;
         opacity: 60%;
-        /* margin: 20px 0px; */
         margin-top: 40px;
         text-align: center;
     }
