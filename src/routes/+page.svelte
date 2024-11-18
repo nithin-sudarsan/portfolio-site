@@ -5,11 +5,13 @@
     import Projects from "../components/Projects.svelte";
     import BackToTop from "../components/BackToTop.svelte";
     import ArtWork from "../components/ArtWork.svelte";
+    import WorkExp from "../components/WorkExp.svelte";
 </script>
 
 <main>
     <slot><Header /></slot>
     <slot><About /></slot>
+    <slot><WorkExp /></slot>
     <slot><Projects /></slot>
     <slot><ArtWork /></slot>
     <slot><Contact /></slot>

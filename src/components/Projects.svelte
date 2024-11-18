@@ -27,7 +27,7 @@
 </script>
 
 <main>
-    <span class="title2">Some of my Projects</span>
+    <span class="title2">Some of my projects</span>
     <div class = "projects">
       <div class="grid-item">
         <ProjectCard class = "grid-item" icon ={icons.icon1} title = "Javelin Throw Analysis" desc = {descs.desc1} link = {links.link1}/>
