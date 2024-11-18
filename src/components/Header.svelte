@@ -25,46 +25,6 @@
         darkIcon.setAttribute("display", "none");
 	});
 
-    let isDragging = false;
-    let rotation = 0;
-    let startAngle = 0;
-    let startRotation = 0;
-
-    function getAngle(event, element) {
-    const rect = element.getBoundingClientRect();
-    const center = {
-        x: rect.left + rect.width / 2,
-        y: rect.top + rect.height / 2
-    };
-    return Math.atan2(
-        event.clientY - center.y,
-        event.clientX - center.x
-    ) * (180 / Math.PI);
-    }
-
-    function handleMouseDown(event) {
-    isDragging = true;
-    const element = event.target;
-    startAngle = getAngle(event, element);
-    startRotation = rotation;
-    }
-
-    function handleMouseMove(event) {
-    if (!isDragging) return;
-
-    const element = event.target;
-    const currentAngle = getAngle(event, element);
-    const angleDiff = currentAngle - startAngle;
-    rotation = startRotation + angleDiff;
-
-    // Prevent text selection while dragging
-    event.preventDefault();
-    }
-
-    function handleMouseUp() {
-    isDragging = false;
-    }
-
 </script>
 
 <main>
@@ -113,20 +73,12 @@
             </p>
         </div>
         <div class= "header-right">
-            <div class="profile-container tooltip">
+            <div>
                 <img
-                    src={img}
-                    alt="Profile"
-                    class="profilePicture"
-                    style="transform: rotate({rotation}deg)"
-                    onmousedown={handleMouseDown}
-                    onmousemove={handleMouseMove}
-                    onmouseup={handleMouseUp}
-                    onmouseleave={handleMouseUp}
+                src="{img}"
+                alt="Profile"
+                class="profilePicture"
                 />
-                <div class="tooltiptext">
-                    Try rotating me ;)
-                </div>
             </div>
             <div>
                 <button
@@ -173,21 +125,10 @@
         cursor: pointer;
     }
 
-    .profile-container {
-        display: inline-block;
-        cursor: grab;
-    }
-
-    .profile-container:active {
-        cursor: grabbing;
-    }
-
-    .profilePicture {
+    .profilePicture{
         border-radius: 100%;
         height: 110px;
-        margin: 5px;
-        user-select: none;
-        transition: transform 0.1s ease-out;
+        margin: 5 px;
     }
 
     .header-right {
@@ -211,34 +152,5 @@
         .secondaryToggleButton {
             display: none;
         }
-    }
-
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        text-decoration-style: dotted;
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 200px;
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 8px;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 0.875rem;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
     }
 </style>
