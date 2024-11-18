@@ -52,7 +52,6 @@
     .back-to-top-btn {
         background-color: lightgray;
         border-radius: 5px;
-        font-family: monospace;
         height: 35px;
         border: none;
         font-size: large;

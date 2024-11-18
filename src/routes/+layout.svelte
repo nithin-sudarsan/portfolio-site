@@ -17,7 +17,7 @@
 
     :global(body) {
       margin: 0;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: "Geist Mono", monospace;
     }
     
     :global(body.light-mode) {
@@ -33,12 +33,10 @@
     :global(.title1) {
         font-weight: bold;
         font-size : 40px;
-        font-family: "Cousine", monospace;
     }
     :global(.title2) {
         font-weight: bold;
         font-size : 35px;
-        font-family: "Cousine", monospace;
     }
 
     :global(hr) {
