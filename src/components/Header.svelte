@@ -79,7 +79,7 @@
                 alt="Profile"
                 class="profilePicture"
                 /></a>
-                <span class="tooltiptext"> Buy me a coffee ;)</span>
+                <span class="tooltiptext"> Buy me a coffee 😉</span>
             </div>
             <div>
                 <button
