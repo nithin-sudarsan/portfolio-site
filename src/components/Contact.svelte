@@ -6,9 +6,9 @@
     <span class="title2">Contact</span>
     <div class="links">
         <p>Email: <a href="mailto:nithinsudarsan740@gmail.com">nithinsudarsan740@gmail.com</a></p>
-        <p>Github: <a href="https://github.com/nithin-sudarsan">/nithin-sudarsan</a></p>
-        <p>Email: <a href="https://x.com/Nithin_016">@Nithin_016</a></p>
-        <p>Buy me a coffee: <a href="https://buymeacoffee.com/notnothin"> ☕️ </a></p>
+        <p>Github: <a href="https://github.com/nithin-sudarsan" target="_blank">/nithin-sudarsan</a></p>
+        <p>Email: <a href="https://x.com/Nithin_016" target="_blank">@Nithin_016</a></p>
+        <p><a href="https://buymeacoffee.com/notnothin" target="_blank">Buy me a coffee ☕️ </a></p>
     </div>
 </main>
 

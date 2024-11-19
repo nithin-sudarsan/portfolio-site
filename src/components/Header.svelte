@@ -32,7 +32,7 @@
     <div style="display: flex;" class = "header-main">
         <div class = "header-left">
             <div class = "title">
-                <span class="title1"> Ayo! I'm Nithin </span> 
+                <span class="title1"> Ayo! I'm <span class ="tooltip bmac1"><a href="https://buymeacoffee.com/notnothin" target="_blank" class = "bmac2">Nithin</a><span class="tooltiptext">Buy me a coffee ☕️</span></span><span class="notbmac">Nithin</span></span> 
                 <button onclick={toggleTheme} class = "secondaryToggleButton">
                     <svg width="30" height="30" id="light-icon">
                       <circle cx="15" cy="15" r="6" fill="currentColor" />
@@ -74,12 +74,12 @@
         </div>
         <div class= "header-right">
             <div class = "tooltip">
-                <a href="https://buymeacoffee.com/notnothin"><img
+                <a href="https://buymeacoffee.com/notnothin" target="_blank"><img
                 src="{img}"
                 alt="Profile"
                 class="profilePicture"
                 /></a>
-                <span class="tooltiptext"> Buy me a coffee 😉</span>
+                <span class="tooltiptext"> Buy me a coffee ☕️</span>
             </div>
             <div>
                 <button
@@ -147,12 +147,24 @@
             align-items: center;
             justify-content: space-between;
         }
+        .notbmac {
+            display : none;
+        }
+        .bmac2 {
+            color: inherit;
+            text-decoration: none;
+        }
+
     }
 
     @media (min-width: 678px) {
         .secondaryToggleButton {
             display: none;
         }
+        .bmac1 {
+            display: none
+        }
+        
     }
 
 </style>
