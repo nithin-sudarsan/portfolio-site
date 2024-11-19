@@ -8,6 +8,7 @@
         <p>Email: <a href="mailto:nithinsudarsan740@gmail.com">nithinsudarsan740@gmail.com</a></p>
         <p>Github: <a href="https://github.com/nithin-sudarsan">/nithin-sudarsan</a></p>
         <p>Email: <a href="https://x.com/Nithin_016">@Nithin_016</a></p>
+        <p>Buy me a coffee: <a href="https://buymeacoffee.com/notnothin"> ☕️ </a></p>
     </div>
 </main>
 
