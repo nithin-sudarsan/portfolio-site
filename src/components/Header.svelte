@@ -155,32 +155,4 @@
         }
     }
 
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        text-decoration-style: dotted;
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 200px;
-        /* background-color: #333; */
-        /* color: white; */
-        text-align: center;
-        padding: 8px;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 0.875rem;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
 </style>

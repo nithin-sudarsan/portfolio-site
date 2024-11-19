@@ -28,6 +28,9 @@
     .highlight:hover {
         cursor: pointer;
     }
-
+    .tooltiptext {
+        font-weight: normal;
+        font-style: normal;
+    }
 
 </style>
