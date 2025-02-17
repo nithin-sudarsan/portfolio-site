@@ -8,7 +8,7 @@
         I've had keen interest in technology since I was a kid, which led me to pursue computer science in high school and college. On this journey i discovered my passion for machine learning and deep learning and now I'm heading a path towards pursuing master's in Artificial Intelligence and explore the domain deeper.
     </p>
     <div class="quote">
-        "The only true wisdom is in knowing you know nothing." - Socrates
+        "Luck favours the one who tries." - Barbara Oakley
     </div>
     <hr>
 
