@@ -32,7 +32,7 @@
     <div style="display: flex;" class = "header-main">
         <div class = "header-left">
             <div class = "title">
-                <span class="title1"> Ayo! I'm <span class ="tooltip bmac1"><a href="https://buymeacoffee.com/notnothin" target="_blank" class = "bmac2">Nithin</a><span class="tooltiptext">Buy me a coffee ☕️</span></span><span class="notbmac">Nithin</span></span> 
+                <span class="title1"> Hey! I'm <span class ="tooltip bmac1"><a href="https://buymeacoffee.com/notnothin" target="_blank" class = "bmac2">Nithin</a><span class="tooltiptext">Buy me a coffee ☕️</span></span><span class="notbmac">Nithin</span></span> 
                 <button onclick={toggleTheme} class = "secondaryToggleButton">
                     <svg width="30" height="30" id="light-icon">
                       <circle cx="15" cy="15" r="6" fill="currentColor" />

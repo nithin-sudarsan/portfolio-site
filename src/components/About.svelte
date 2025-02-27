@@ -10,6 +10,9 @@
     <div class="quote">
         "Luck favours the one who tries." - Barbara Oakley
     </div>
+    <p>
+        I've recently started writing blogs, feel free to give it a <a href="/blogs">read</a>.
+    </p>
     <hr>
 
 </main>
@@ -29,6 +32,10 @@
         padding: 7px 12px;
         font-style: italic;
         margin-top: 20px;
+    }
+
+    a{
+        color: inherit;
     }
 
 </style>
