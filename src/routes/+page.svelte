@@ -6,6 +6,7 @@
     import BackToTop from "../components/BackToTop.svelte";
     import ArtWork from "../components/ArtWork.svelte";
     import WorkExp from "../components/WorkExp.svelte";
+    import LatestPosts from "../components/LatestPosts.svelte";
 </script>
 
 <main>
@@ -13,6 +14,7 @@
     <slot><About /></slot>
     <slot><WorkExp /></slot>
     <slot><Projects /></slot>
+    <slot><LatestPosts /></slot>
     <slot><ArtWork /></slot>
     <slot><Contact /></slot>
     <BackToTop />
