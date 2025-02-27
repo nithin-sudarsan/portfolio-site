@@ -94,13 +94,10 @@
   <style>
     .container {
       padding: 2rem;
-      /* font-family: system-ui, -apple-system, sans-serif; */
     }
     
     a {
-      text-decoration: none;
       color: inherit;
-      font-style: italic;
     }
     
     a:hover {

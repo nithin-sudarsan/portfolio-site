@@ -48,6 +48,14 @@
         font-weight: bold;
         font-size : 35px;
     }
+    :global(.title3) {
+        font-weight: bold;
+        font-size : 30px;
+    }
+    :global(.title4) {
+        font-weight: bold;
+        font-size : 25px;
+    }
 
     :global(hr) {
         width: 90%;
