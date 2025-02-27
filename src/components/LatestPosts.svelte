@@ -21,7 +21,7 @@
             <div class="wip-container">
                 <div class="wip-badge">
                     <span class="wip-icon">⚠️</span>
-                    <span class="wip-text">Work in Progress</span>
+                    <span class="wip-text">WIP</span>
                 </div>
             </div>
         </div>
