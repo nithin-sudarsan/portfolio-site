@@ -30,11 +30,6 @@
 </script>
 
 <main>
-    <div class="wip-container">
-        <div class="wip-badge">
-            ⚠️ Work In Progress
-        </div>
-    </div>
     {#each blogsByYear as yearGroup}
       <div class="blogs">
         <div class="year">{yearGroup.year}</div>
@@ -54,21 +49,5 @@
     .year{
         margin: 10px 0px;
         font-size: large;
-    }
-    .wip-container {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .wip-badge {
-        display: inline-block;
-        background-color: #ffe81c55;
-        color: #ffe81c;
-        font-weight: bold;
-        padding: 8px 20px;
-        border-radius: 30px;
-        text-align: center;
-        letter-spacing: 1px;
     }
 </style>
