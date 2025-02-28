@@ -99,4 +99,30 @@
         opacity: 1;
         width: auto;
     }
+
+    @media (max-width: 460px) {
+        .title2 {
+            font-size: 25px;
+            width: 120px;
+        }
+        .with-WIP {
+            /* display: flex; */
+            align-items: center;
+            gap: 0px;
+        }
+        .wip-container {
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px;
+        }
+        .all-posts{
+            width: 100px;
+        }
+    }
+
+    @media(min-width: 460px) and (max-width: 577px) {
+        .title2 {
+            width: 150px
+        }
+    }
 </style>
