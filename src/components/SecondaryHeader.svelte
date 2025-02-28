@@ -12,6 +12,11 @@
         </div>
       </div>
     </div>
+    <div class="wip-container">
+        <div class="wip-badge">
+            ⚠️ Work In Progress
+        </div>
+    </div>
     <hr>
   </main>
   
@@ -46,5 +51,22 @@
     a{
         text-decoration: none;
         color: #ffffff;
+    }
+
+    .wip-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .wip-badge {
+        display: inline-block;
+        background-color: #ffe81c55;
+        color: #ffe81c;
+        font-weight: bold;
+        padding: 8px 20px;
+        border-radius: 30px;
+        text-align: center;
+        letter-spacing: 1px;
     }
   </style>
