@@ -103,10 +103,9 @@
     @media (max-width: 460px) {
         .title2 {
             font-size: 25px;
-            width: 120px;
+            width: 95px;
         }
         .with-WIP {
-            /* display: flex; */
             align-items: center;
             gap: 0px;
         }
@@ -122,7 +121,13 @@
 
     @media(min-width: 460px) and (max-width: 577px) {
         .title2 {
-            width: 150px
+            width: 125px
+        }
+    }
+
+    @media(min-width: 578px) and (max-width: 650px) {
+        .title2 {
+            width: 150px;
         }
     }
 </style>
