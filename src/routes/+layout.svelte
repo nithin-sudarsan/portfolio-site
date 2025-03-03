@@ -17,7 +17,8 @@
 
     :global(body) {
       margin: 0;
-      font-family: "Geist Mono", monospace;
+      /* font-family: "Geist Mono", monospace; */
+      font-family: "Kumbh Sans", sans-serif;
     }
     
     :global(body.light-mode) {
@@ -27,7 +28,7 @@
     
     :global(body:not(.light-mode)) {
       background-color: #000000;
-      color: #ffffff;
+      color: lightgrey;
     }
 
     :global(.tooltip.light-mode) {
