@@ -9,13 +9,31 @@
     import { isDarkMode } from '$lib/themeStore';
     export let blogPost;
 
+    function calculateReadTime(content) {
+        const WORDS_PER_MINUTE = 100;
+        let totalWords = 0;
+        
+        // Count words in all chapters
+        content.forEach(chapter => {
+            // Split by whitespace and count non-empty strings
+            const words = chapter.chapterBody.split(/\s+/).filter(word => word.length > 0);
+            totalWords += words.length;
+        });
+        
+        // Calculate minutes
+        const minutes = Math.ceil(totalWords / WORDS_PER_MINUTE);
+        
+        // Return formatted string
+        return minutes === 1 ? '1 min' : `${minutes} mins`;
+    }
+
     function formatBlogDate(dateString) {
         const parsedDate = parse(dateString, 'dd-MM-yyyy', new Date());
         return format(parsedDate, 'MMMM d, yyyy');
     }
 
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
-
+    $: readTime = blogPost ? calculateReadTime(blogPost.content) : '';
     $: theme = $isDarkMode ? 'dark' : 'light';
 </script>
 
@@ -24,7 +42,7 @@
     <div class="blog-metadata">
         <p>{date}</p>
         <p style="font-weight: bold;">•</p>
-        <p>{blogPost.timeTaken} read</p>
+        <p>{readTime} read</p>
     </div>
     <div class="blog-content">
         <div class="blog-title title2">
