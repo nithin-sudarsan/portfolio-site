@@ -9,11 +9,15 @@
 
 </script>
 <main>
-    <div class="grid-background"></div>
-    <div class="dot-pattern"></div>
-    <slot></slot>
+    <div class="app-container">
+        <div class="grid-background"></div>
+        <div class="dot-pattern"></div>
+        <slot></slot>
+    </div>
     <Footer />
 </main>
+    
+
 <style>
     main {
         width: 80%;
@@ -24,6 +28,13 @@
         transition: background-color 0.7s ease, color 0.7s ease;
         font-size: large;
         z-index: 1;
+        flex: 1;
+    }
+
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh; /* This ensures the container takes at least the full viewport height */
     }
 
     /* Grid background */
@@ -131,10 +142,6 @@
     :global(.tooltip:hover .tooltiptext) {
         visibility: visible;
         opacity: 1;
-    }
-
-    :global(.light-mode) {
-        color: green;
     }
    
 </style>

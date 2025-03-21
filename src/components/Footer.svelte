@@ -43,10 +43,6 @@
       font-size: 16px;
     }
     
-    .theme-toggle {
-      /* The ToggleTheme component will handle its own styling */
-    }
-    
     /* For dark mode, if your site supports it */
     :global(body.dark-mode) .copyright {
       color: #aaa;

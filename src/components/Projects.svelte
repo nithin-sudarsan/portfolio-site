@@ -60,15 +60,32 @@
     justify-items: center;
   }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
     border-radius: 10px;
     margin: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 0px 20px;
     text-align: center;
     transition: transform 0.4s ease;
-
   }
+
+  /* Theme-aware */
+  :global(body.light-mode) .grid-item:hover {
+      background-color: #dbd7cda2;
+      cursor: pointer;
+    }
+    
+    :global(body:not(.light-mode)) .grid-item:hover {
+      background-color: #333;
+      cursor: pointer;
+    }
+
+    :global(body.light-mode) .grid-item {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+    }
+
+    :global(body:not(.light-mode)) .grid-item {
+      border: 1px solid rgba(129, 129, 129, 0.8);
+    }
 
   .grid-item:hover {
       transform: scale(1.05); 

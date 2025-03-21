@@ -117,7 +117,7 @@
     background-color: #222;
   }
   :global(body.light-mode) .toc-container {
-    background-color: rgba(186, 178, 178, 0.766);
+    background-color: #dbd7cda2;
   }
 
   :global(body.light-mode) .toc-item a {

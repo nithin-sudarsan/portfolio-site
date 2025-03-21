@@ -39,7 +39,7 @@
       background-color: #222;
     }
     :global(body.light-mode) .back-to-blogs {
-      background-color: rgba(186, 178, 178, 0.766);
+      background-color: #dbd7cda2;
     }
     
     .arrow-container {
