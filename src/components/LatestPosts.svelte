@@ -87,6 +87,17 @@
     .wip-badge:hover .wip-icon {
         margin-right: 8px;
     }
+
+    /* Theme-aware WIP badge */
+    :global(body.light-mode) .wip-badge {
+        background-color: #ffe81c76;
+        color: black;
+    }
+    
+    :global(body:not(.light-mode)) .wip-badge {
+        background-color: #ffe81c55;
+        color: #ffe81c;
+    }
     
     .wip-text {
         white-space: nowrap;

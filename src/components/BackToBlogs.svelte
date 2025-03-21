@@ -33,7 +33,13 @@
       margin: 10px 0px;
       border-radius: 6px;
       font-size: small;
+    }
+
+    :global(body:not(.light-mode)) .back-to-blogs {
       background-color: #222;
+    }
+    :global(body.light-mode) .back-to-blogs {
+      background-color: rgba(186, 178, 178, 0.766);
     }
     
     .arrow-container {

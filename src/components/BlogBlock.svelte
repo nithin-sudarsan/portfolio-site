@@ -47,7 +47,14 @@
       align-items: center;
       border: 1px solid #444;
     }
-    .blog-card:hover {
+
+    /* Theme-aware */
+    :global(body.light-mode) .blog-card:hover {
+      background-color: #d6d2be;
+      cursor: pointer;
+    }
+    
+    :global(body:not(.light-mode)) .blog-card:hover {
       background-color: #333;
       cursor: pointer;
     }
