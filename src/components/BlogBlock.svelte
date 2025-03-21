@@ -50,7 +50,7 @@
 
     /* Theme-aware */
     :global(body.light-mode) .blog-card:hover {
-      background-color: #d6d2be;
+      background-color: #dbd7cda2;
       cursor: pointer;
     }
     
