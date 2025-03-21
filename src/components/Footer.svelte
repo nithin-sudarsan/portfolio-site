@@ -21,8 +21,13 @@
     footer {
       padding: 16px 0;
       width: 100%;
-      border-top: 1px solid #eaeaea;
+      border-top: 1px solid hsla(0, 0%, 20%, 0.5);
       margin-top: 10px; /* Pushes the footer to the bottom */
+    }
+
+    :global(body:not(.light-mode)) footer {
+      border-top: 2px solid hsla(0, 0%, 80%, 0.5);
+    
     }
     
     .footer-content {

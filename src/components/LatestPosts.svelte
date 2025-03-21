@@ -30,6 +30,8 @@
         {#each firstFiveBlogs as blog}
             <BlogBlock content = {blog}/>
         {/each}
+
+    <hr>
 </main>
 
 <style>
