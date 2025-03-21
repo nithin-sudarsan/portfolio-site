@@ -69,4 +69,27 @@
         text-align: center;
         letter-spacing: 1px;
     }
+
+    /* Theme-aware */
+    :global(body.light-mode) .title1 {
+      color: #333;
+    }
+    
+    :global(body:not(.light-mode)) .title1 {
+      color: #f8f5f1
+    }
+  
+    :global(body:not(.light-mode)) a {
+      color: f8f5f1;
+    }
+    :global(body.light-mode) a {
+      color: #333
+    }
+
+    :global(body:not(.light-mode)) .wip-badge {
+      color: f8f5f1;
+    }
+    :global(body.light-mode) .wip-badge {
+      color: #333
+    }
   </style>

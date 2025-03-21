@@ -36,7 +36,7 @@
         z-index: 99;
         right: 20px;
         user-select: none;
-        bottom: 20px;
+        bottom: 70px;
         color: white;
     }
 

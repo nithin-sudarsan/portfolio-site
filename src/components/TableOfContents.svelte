@@ -57,7 +57,6 @@
     margin: 20px 0;
     border: 1px solid #444;
     border-radius: 6px;
-    background-color: #222;
     overflow: hidden;
   }
   
@@ -82,7 +81,6 @@
   
   .toc-content {
     border-top: 1px solid #444;
-    background-color: #0b0b0b;
     padding: 12px 16px;
   }
   
@@ -114,4 +112,16 @@
   .arrow-rotated {
     transform: rotate(90deg);
   }
+
+  :global(body:not(.light-mode)) .toc-container {
+    background-color: #222;
+  }
+  :global(body.light-mode) .toc-container {
+    background-color: rgba(186, 178, 178, 0.766);
+  }
+
+  :global(body.light-mode) .toc-item a {
+    color: black;
+  }
+
 </style>
