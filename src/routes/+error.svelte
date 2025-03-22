@@ -41,7 +41,7 @@
   </script>
   
   <div class="container">
-    <h1>Plot twist:</h1>
+    <h1>404 - Plot twist:</h1>
     <p class="tooltip">This page is playing hide and seek <span class="tooltiptext">and it's winning 😉</span></p>
     <p>Try heading back to the <a href="/">homepage</a></p>
     <p class="game-intro">Or try your luck with this memory game while you're here!</p>

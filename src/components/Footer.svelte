@@ -11,6 +11,9 @@
       <div class="copyright">
         © {currentYear} • {blogName} <span class="pencil-icon">✏️</span>
       </div>
+      <div class="theme-toggle button1">
+        <ToggleTheme />
+      </div>
       <div class="theme-toggle">
         <ToggleTheme />
       </div>
@@ -51,5 +54,9 @@
     /* For dark mode, if your site supports it */
     :global(body.dark-mode) .copyright {
       color: #aaa;
+    }
+
+    .button1 {
+      display: none;
     }
   </style>

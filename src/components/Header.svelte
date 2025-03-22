@@ -15,6 +15,9 @@
         <div class = "header-left">
             <div class = "title">
                 <span class="title1"> Hey! I'm <span class ="tooltip bmac1"><a href="https://buymeacoffee.com/notnothin" target="_blank" class = "bmac2">Nithin</a><span class="tooltiptext">Buy me a coffee ☕️</span></span><span class="notbmac">Nithin</span></span>
+                <div class="secondaryToggleButton button1">
+                    <SecondaryToggleTheme isDarkMode = {isDarkMode} handleToggle = {toggleTheme} />
+                </div>
                 <div class="secondaryToggleButton">
                     <SecondaryToggleTheme isDarkMode = {isDarkMode} handleToggle = {toggleTheme} />
                 </div>
@@ -97,6 +100,9 @@
         }
 
     }
+    .button1 {
+        display: none;
+    }
 
     @media (min-width: 678px) {
         .secondaryToggleButton {
@@ -105,6 +111,7 @@
         .bmac1 {
             display: none
         }
+        
         
     }
 
