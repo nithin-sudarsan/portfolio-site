@@ -1,8 +1,11 @@
 <main>
     <span class="title2">Who am I?</span>
     <p>
-        I'm a 23 year old software engineer from India with a Bachelor's degree in Computer Science Engineering, soon to begin my next academic journey in Artificial Intelligence MSc at the <a href="https://informatics.ed.ac.uk" target="_blank">School of Informatics</a> , <a href="https://www.ed.ac.uk" target="_blank">University of Edinburgh</a>. 
+        I'm a 23 year old software engineer from India with a Bachelor's degree in Computer Science Engineering, now heading a path towards pursuing master's in Artificial Intelligence and explore the domain deeper.
     </p>
+    <!-- <p>
+        I'm a 23 year old software engineer from India with a Bachelor's degree in Computer Science Engineering, soon to begin my next academic journey in Artificial Intelligence MSc at the <a href="https://informatics.ed.ac.uk" target="_blank">School of Informatics</a> , <a href="https://www.ed.ac.uk" target="_blank">University of Edinburgh</a>. 
+    </p> -->
     <p>
         I've had keen interest in technology since I was a kid, which led me to pursue computer science in high school and college. On this journey I discovered my passion for machine learning and deep learning. 
     </p>
