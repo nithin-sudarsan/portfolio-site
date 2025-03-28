@@ -7,25 +7,9 @@
     import TableOfContents from "./TableOfContents.svelte";
     import { onMount } from "svelte";
     import { isDarkMode } from '$lib/themeStore';
+    import { readMarkdownFile } from "$lib";
     export let blogPost;
-
-    function calculateReadTime(content) {
-        const WORDS_PER_MINUTE = 100;
-        let totalWords = 0;
-        
-        // Count words in all chapters
-        content.forEach(chapter => {
-            // Split by whitespace and count non-empty strings
-            const words = chapter.chapterBody.split(/\s+/).filter(word => word.length > 0);
-            totalWords += words.length;
-        });
-        
-        // Calculate minutes
-        const minutes = Math.ceil(totalWords / WORDS_PER_MINUTE);
-        
-        // Return formatted string
-        return minutes === 1 ? '1 min' : `${minutes} mins`;
-    }
+    export let BlogComponent;
 
     function formatBlogDate(dateString) {
         const parsedDate = parse(dateString, 'dd-MM-yyyy', new Date());
@@ -33,7 +17,12 @@
     }
 
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
-    $: readTime = blogPost ? calculateReadTime(blogPost.content) : '';
+
+    export let filename;
+    let readTime = ""
+    onMount(async () => {
+        readTime = await readMarkdownFile(filename);
+    });
     $: theme = $isDarkMode ? 'dark' : 'light';
 </script>
 
@@ -44,20 +33,8 @@
         <p style="font-weight: bold;">•</p>
         <p>{readTime} read</p>
     </div>
-    <div class="blog-content">
-        <div class="blog-title title2">
-            {capitalize(blogPost.title)}
-        </div>
-        <TableOfContents chapters={blogPost.content} />
-        <div class="blog-body">
-            {#each blogPost.content as chapter}
-            <div class="chapter-section" id={chapter.chapterId}>
-                <p class="title4">{capitalize(chapter.chapterTitle)}</p>
-                <p>{capitalize(chapter.chapterBody)}</p>
-            </div>
-            {/each}
-        </div>
-    </div>
+    <TableOfContents chapters={blogPost.content} />
+    <BlogComponent />
 
     <div class = "comments">
         <Giscus
