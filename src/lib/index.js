@@ -5,7 +5,7 @@ export function capitalize(text) {
 }
 
 async function fetchMarkdown(fileName) {
-    const response = await fetch(`../src/lib/${fileName}.md`);
+    const response = await fetch(`https://raw.githubusercontent.com/nithin-sudarsan/portfolio-site/refs/heads/main/src/lib/content/${fileName}.md`);
     if (!response.ok) throw new Error("File not found");
     return response.text();
 }

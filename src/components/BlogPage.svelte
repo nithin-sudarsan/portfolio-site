@@ -19,7 +19,7 @@
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
 
     export let filename;
-    let readTime = ""
+    let readTime = "";
     onMount(async () => {
         readTime = await readMarkdownFile(filename);
     });
