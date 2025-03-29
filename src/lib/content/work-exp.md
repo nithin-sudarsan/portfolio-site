@@ -1,16 +1,20 @@
-<p class="chapter-1" id="chapter-1"></p>
-
 # My Journey at Perfios: Lessons from My First Job
 
+<span id="chapter-1">
+
 ## Joining Perfios: The Beginning of My Professional Journey
+
+</span>
 
 I started my full-time role at <a href="https://perfios.com" class="md-a">Perfios</a> Software Solutions in September 2023, fresh out of college. My initial month was dedicated to intensive training on core Java and data analysis. By mid-October, I joined the Insights team, where I familiarized myself with the extensive codebase through walkthrough videos. This phase helped me understand the intricate interactions between data analysis, server code, report generation, and UI components.
 
 ![](https://www.fibac-india.com/Perfios.png)
 
-<p class="chapter-2" id="chapter-2"></p>
+<span id="chapter-2">
 
 ## Understanding the Development Lifecycle
+
+</span>
 
 Coming from an internship background focused on individual projects, I initially struggled with the structured release lifecycle at Perfios. Fortunately, the Insights team had excellent documentation, which helped me grasp the following workflow:
 
@@ -26,9 +30,11 @@ Perfios followed a weekly release cycle, with major deployments occurring on the
 ![image.png](https://github.com/nithin-sudarsan/portfolio-site/blob/main/src/lib/images/blog-images/release-pipeline.png?raw=true)
 
 
-<p class="chapter-3" id="chapter-3"></p>
+<span id="chapter-3">
 
 ## Overcoming Initial Challenges: Scoping & Time Management
+
+</span>
 
 One of my biggest challenges was estimating issue complexity during scoping. Initially, I underestimated dependencies, leading to delays. One example was a salary transaction categorization task, where I failed to account for edge cases like salary debits due to excess payments. I learned that effective scoping requires foresight into potential complexities and cross-team collaboration.
 
@@ -44,9 +50,11 @@ This approach helped me prioritize tasks efficiently and meet deadlines.
 
 ![image.png](https://github.com/nithin-sudarsan/portfolio-site/blob/main/src/lib/images/blog-images/issues-table.png?raw=true)
 
-<p class="chapter-4" id="chapter-4"></p>
+<span id="chapter-4">
 
 ## Key Technologies & Skills Acquired
+
+</span>
 
 Working at Perfios was a hands-on learning experience. Over nearly 1.5 years, I worked primarily on **bank statement analysis report customizations**, developing logic for extracting insights from financial data. The tech stack I worked on included:
 
@@ -62,9 +70,11 @@ I also gained practical experience with **Git version control**, learning comman
 Using Git daily reinforced its importance in managing large-scale projects and maintaining a clean code history.
 
 
-<p class="chapter-5" id="chapter-5"></p>
+<span id="chapter-5">
 
 ## Cross-Team Collaboration & Client Customizations
+
+</span>
 
 I had the opportunity to customize reports and APIs for over **40 clients**, including **16 international clients** from Indonesia, Kenya, Singapore, the UAE, and more. This experience taught me how to:
 
@@ -75,15 +85,19 @@ I had the opportunity to customize reports and APIs for over **40 clients**, inc
 Working on performance improvements also helped me appreciate the importance of **writing efficient, vectorized code** to reduce turnaround time (TAT) and infrastructure costs.
 
 
-<p class="chapter-6" id="chapter-6"></p>
+<span id="chapter-6">
 
 ## Mentoring & Leadership
 
+</span>
+
 As I gained experience, I had the privilege of mentoring new hires, guiding them through the **complex Insights codebase** and helping them troubleshoot issues. Since I had personally faced challenges when starting, I could anticipate their roadblocks and provide proactive solutions. This experience honed my communication skills and solidified my understanding of the product.
 
-<p class="chapter-7" id="chapter-7"></p>
+<span id="chapter-7">
 
 ## Final Reflections
+
+</span>
 
 Perfios provided a fantastic work environment with **supportive managers and experienced mentors** who guided me throughout my journey. The experience helped me:
 
