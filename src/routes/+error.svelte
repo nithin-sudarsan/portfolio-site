@@ -157,7 +157,7 @@
   
     .card {
       aspect-ratio: 1;
-      background-color: #f0f0f0;
+      background-color: #b6b5b5;
       border-radius: 8px;
       display: flex;
       align-items: center;
