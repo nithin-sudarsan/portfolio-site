@@ -1,16 +1,14 @@
----
-layout: blog
-title: My Blog Post
-date: 2024-03-27
----
+<p class="chapter-1" id="chapter-1"></p>
 
 # My Journey at Perfios: Lessons from My First Job
 
 ## Joining Perfios: The Beginning of My Professional Journey
 
-I started my full-time role at Perfios Software Solutions in September 2023, fresh out of college. My initial month was dedicated to intensive training on core Java and data analysis. By mid-October, I joined the Insights team, where I familiarized myself with the extensive codebase through walkthrough videos. This phase helped me understand the intricate interactions between data analysis, server code, report generation, and UI components.
+I started my full-time role at <a href="https://perfios.com" class="md-a">Perfios</a> Software Solutions in September 2023, fresh out of college. My initial month was dedicated to intensive training on core Java and data analysis. By mid-October, I joined the Insights team, where I familiarized myself with the extensive codebase through walkthrough videos. This phase helped me understand the intricate interactions between data analysis, server code, report generation, and UI components.
 
-*Insert an image of your training materials or an onboarding snapshot here.*
+![](https://www.fibac-india.com/Perfios.png)
+
+<p class="chapter-2" id="chapter-2"></p>
 
 ## Understanding the Development Lifecycle
 
@@ -24,7 +22,9 @@ Coming from an internship background focused on individual projects, I initially
 
 Perfios followed a weekly release cycle, with major deployments occurring on the first three Tuesdays of each month. By March 2024, we successfully achieved an 8 PM release timeline by enforcing strict guidelines for MR submission and testing.
 
-*Insert an image of a sprint board or workflow diagram here.*
+![image.png](/src/lib/images/blog-images/release-pipeline.png)
+
+<p class="chapter-3" id="chapter-3"></p>
 
 ## Overcoming Initial Challenges: Scoping & Time Management
 
@@ -39,7 +39,9 @@ To manage my workload better, I developed a **color-coded tracking system**:
 
 This approach helped me prioritize tasks efficiently and meet deadlines.
 
-*Insert an image of your task-tracking system or a Gantt chart here.*
+![image.png](/src/lib/images/blog-images/issues-table.png)
+
+<p class="chapter-4" id="chapter-4"></p>
 
 ## Key Technologies & Skills Acquired
 
@@ -56,7 +58,8 @@ I also gained practical experience with **Git version control**, learning comman
 
 Using Git daily reinforced its importance in managing large-scale projects and maintaining a clean code history.
 
-*Insert an image of a Git workflow or command cheat sheet here.*
+
+<p class="chapter-5" id="chapter-5"></p>
 
 ## Cross-Team Collaboration & Client Customizations
 
@@ -68,11 +71,14 @@ I had the opportunity to customize reports and APIs for over **40 clients**, inc
 
 Working on performance improvements also helped me appreciate the importance of **writing efficient, vectorized code** to reduce turnaround time (TAT) and infrastructure costs.
 
-*Insert an image of performance benchmarking results or a sample report customization here.*
+
+<p class="chapter-6" id="chapter-6"></p>
 
 ## Mentoring & Leadership
 
 As I gained experience, I had the privilege of mentoring new hires, guiding them through the **complex Insights codebase** and helping them troubleshoot issues. Since I had personally faced challenges when starting, I could anticipate their roadblocks and provide proactive solutions. This experience honed my communication skills and solidified my understanding of the product.
+
+<p class="chapter-7" id="chapter-7"></p>
 
 ## Final Reflections
 
@@ -84,5 +90,3 @@ Perfios provided a fantastic work environment with **supportive managers and exp
 - Gain confidence in **cross-functional collaboration** and **client interactions**.
 
 As I transition to my next opportunity, I carry forward these invaluable lessons and skills that have shaped me into a more competent and confident software developer.
-
-*Insert a closing image of your team or a farewell message from colleagues here.*

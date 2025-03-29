@@ -1,71 +1,58 @@
 [
     {
-      "title": "Notes on Transformers",
-      "desc": "Understanding how transformers internally work",
-      "date": "20-02-2025",
+      "title": "My Journey at Perfios: Lessons from My First Job",
+      "desc": "My journey at Perfios, showcasing growth in technical skills and collaborative software development",
+      "date": "27-03-2025",
       "link": "blog1",
       "content": [
         {
-            "chapterTitle": "chapter 1",
-            "chapterId": "chapter-1",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+            "chapterTitle": "Joining Perfios: The Beginning of My Professional Journey",
+            "chapterId": "chapter-1"
         },
         {
-            "chapterTitle": "chapter 2",
-            "chapterId": "chapter-2",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+            "chapterTitle": "Understanding the Development Lifecycle",
+            "chapterId": "chapter-2"
         },
         {
-            "chapterTitle": "chapter 3",
-            "chapterId": "chapter-3",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+            "chapterTitle": "Overcoming Initial Challenges: Scoping & Time Management",
+            "chapterId": "chapter-3"
         },
         {
-            "chapterTitle": "chapter 4",
-            "chapterId": "chapter-4",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+            "chapterTitle": "Key Technologies & Skills Acquired",
+            "chapterId": "chapter-4"
+        },
+        {
+            "chapterTitle": "Cross-Team Collaboration & Client Customizations",
+            "chapterId": "chapter-5"
+        },
+        {
+            "chapterTitle": "Mentoring & Leadership",
+            "chapterId": "chapter-6"
+        },
+        {
+            "chapterTitle": "Final Reflections",
+            "chapterId": "chapter-7"
         }
-      ] 
-    },
-    {
-      "title": "How Neural Networks think",
-      "desc": "How neural netowrks thinking using weights and biases",
-      "date": "15-02-2025",
-      "timeTaken": "3 mins",
-      "link": "blog2",
-      "content": [
-        {
-            "chapterTitle": "chapter 1",
-            "chapterId": "chapter-1",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
-        },
-        {
-            "chapterTitle": "chapter 2",
-            "chapterId": "chapter-2",
-            "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
-        }
+        
       ] 
     },
     {
         "title": "Intro",
-        "desc": "Brief intro to my blogs",
-        "date": "20-02-2023",
+        "desc": "Dummy blog to demonstrate 404 page (as of now)",
+        "date": "20-02-2024",
         "link": "blog3",
         "content": [
           {
               "chapterTitle": "chapter 1",
-              "chapterId": "chapter-1",
-              "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+              "chapterId": "chapter-1"
           },
           {
               "chapterTitle": "chapter 2",
-              "chapterId": "chapter-2",
-              "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+              "chapterId": "chapter-2"
           },
           {
               "chapterTitle": "chapter 3",
-              "chapterId": "chapter-3",
-              "chapterBody": "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse sagittis taciti semper integer vitae nunc. Nam lacinia habitant a; dictum montes quis. Non hendrerit proin libero; integer cras augue ac. Curabitur vivamus quam pulvinar metus integer. Tincidunt facilisi massa facilisis amet pharetra. Aenean nulla porttitor sagittis euismod dis. Dictumst auctor vitae, blandit dapibus parturient tincidunt. Vehicula congue morbi egestas metus cursus; morbi vel accumsan.\nSodales nascetur molestie neque morbi dignissim pretium facilisis. Aliquam nibh nisi maximus ante etiam metus himenaeos. Quis iaculis sagittis iaculis risus sem etiam. Tincidunt sollicitudin varius pellentesque leo ipsum fusce pharetra. Varius sit dictumst neque purus metus ullamcorper. Facilisi odio nisl condimentum etiam nisi consequat proin vulputate odio. Elementum inceptos pharetra faucibus lorem tincidunt pulvinar nulla imperdiet."
+              "chapterId": "chapter-3"
           }
         ] 
       }

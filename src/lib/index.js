@@ -6,9 +6,9 @@ export function capitalize(text) {
 
 async function fetchMarkdown(fileName) {
     const response = await fetch(`../src/lib/${fileName}.md`);
-        if (!response.ok) throw new Error("File not found");
-        return response.text();
-    }
+    if (!response.ok) throw new Error("File not found");
+    return response.text();
+}
 
     
 
@@ -21,7 +21,7 @@ export async function readMarkdownFile(filename) {
         return null; // Handle errors gracefully
     }
 }
-    
+
 
 function calculateReadTime(content) {
     const WORDS_PER_MINUTE = 100;
