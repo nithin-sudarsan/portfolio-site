@@ -1,7 +1,7 @@
 <main>
     <div class="header-main">
       <div class="title">
-        <a href="/blogs"><span class="title1">Blog posts</span></a>
+        <a href="/blogs"><span class="title1">Nithin's blog</span></a>
       </div>
       <div class="nav-links">
         <div class="backToHome">

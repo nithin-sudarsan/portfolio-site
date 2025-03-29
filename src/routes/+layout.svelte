@@ -58,7 +58,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: radial-gradient(circle, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
+        background-image: radial-gradient(circle, rgba(100, 100, 100, 0.2) 1px, transparent 1px);
         background-size: 30px 30px;
         z-index: -1;
         pointer-events: none;
@@ -143,5 +143,96 @@
         visibility: visible;
         opacity: 1;
     }
-   
+   :global(pre) {
+        background-color: rgb(41, 50, 63);
+        color: white;
+        padding: 20px;
+        border-style: solid; 
+        border-radius: 15px;
+        border-width: 1px;
+        margin: 20px;
+   }
+
+   :global(body.light-mode pre) {
+        background-color: lightgrey;
+        color: #333;
+        border-color: grey;
+   }
+
+   :global(code:not(pre code)) {
+        background-color: #3c3c4170;
+        padding: 2px 7px;
+        border-radius: 7px;
+        color: rgb(223, 76, 39);
+        margin: 2px 2px;
+    }
+
+    :global(body.light-mode code:not(pre code)) {
+        background-color: #cecbc6;
+        padding: 2px 7px;
+        border-radius: 7px;
+        color: rgb(223, 76, 39);
+        margin: 2px 2px;
+    }
+
+    :global(.md-a) {
+        text-decoration: underline;
+        color: inherit;
+        font-style: italic;
+    }
+
+    /* Dark mode table (default) */
+    :global(table) {
+        margin: 0 auto;
+        color: lightgrey;
+        background: hsl(233, 15%, 12%);
+        font-size: 12pt;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 70%;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 3px solid hsl(0, 0%, 28%);
+    }
+
+    /* Light mode table */
+    :global(body.light-mode table) {
+        color: #333;
+        background: #f8f8f8;
+        border: 3px solid #ccc;
+    }
+
+    /* Dark mode th/td */
+    :global(th,td) {
+        padding: .5em;
+        border: 1px solid hsl(0, 0%, 0%);   
+    }
+
+    /* Light mode th/td */
+    :global(body.light-mode th, body.light-mode td) {
+        border: 1px solid #ddd;
+    }
+
+    /* Dark mode th */
+    :global(th) {
+        background: hsl(232, 10%, 16%);
+    }
+
+    /* Light mode th */
+    :global(body.light-mode th) {
+        background: #e6e6e6;
+    }
+
+    :global(img:not(.image)) {
+        max-width: 90%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* turn off WIP badge */
+    :global(.wip-container) {
+        display:none !important;  
+    }
 </style>
