@@ -22,7 +22,7 @@ Coming from an internship background focused on individual projects, I initially
 
 Perfios followed a weekly release cycle, with major deployments occurring on the first three Tuesdays of each month. By March 2024, we successfully achieved an 8 PM release timeline by enforcing strict guidelines for MR submission and testing.
 
-![image.png](/src/lib/images/blog-images/release-pipeline.png)
+![image.png](https://github.com/nithin-sudarsan/portfolio-site/blob/main/src/lib/images/blog-images/release-pipeline.png?raw=true)
 
 <p class="chapter-3" id="chapter-3"></p>
 
@@ -39,7 +39,7 @@ To manage my workload better, I developed a **color-coded tracking system**:
 
 This approach helped me prioritize tasks efficiently and meet deadlines.
 
-![image.png](/src/lib/images/blog-images/issues-table.png)
+![image.png](https://github.com/nithin-sudarsan/portfolio-site/blob/main/src/lib/images/blog-images/issues-table.png?raw=true)
 
 <p class="chapter-4" id="chapter-4"></p>
 
