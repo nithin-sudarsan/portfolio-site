@@ -2,6 +2,8 @@
     import { fetchBlogData } from '$lib';
     import BlogPage from "../../../components/BlogPage.svelte";
     import { onMount } from 'svelte';
+    export let data; // This will be passed from the route
+    const link = data.blogLink; // Use the blogLink from the route data
 
     let blogPost = null;
     let blogContent = '';
@@ -17,7 +19,7 @@
         }, 500);
 
         // Fetch data
-        fetchData('work-exp');
+        fetchData(link);
 
         return () => clearInterval(interval); // Cleanup interval on component destroy
     });
