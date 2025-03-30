@@ -4,26 +4,8 @@ export function capitalize(text) {
     return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-async function fetchMarkdown(fileName) {
-    const response = await fetch(`https://raw.githubusercontent.com/nithin-sudarsan/portfolio-site/refs/heads/main/src/lib/content/${fileName}.md`);
-    if (!response.ok) throw new Error("File not found");
-    return response.text();
-}
 
-    
-
-export async function readMarkdownFile(filename) {
-    try {
-        const blogContentString = await fetchMarkdown(filename);
-        return calculateReadTime(blogContentString); 
-    } catch (err) {
-        console.error(err);
-        return null; // Handle errors gracefully
-    }
-}
-
-
-function calculateReadTime(content) {
+export function calculateReadTime(content) {
     const WORDS_PER_MINUTE = 100;
     let totalWords = 0;
     

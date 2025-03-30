@@ -7,21 +7,21 @@
     import TableOfContents from "./TableOfContents.svelte";
     import { onMount } from "svelte";
     import { isDarkMode } from '$lib/themeStore';
-    import { readMarkdownFile } from "$lib";
+    import { calculateReadTime } from "$lib";
     export let blogPost;
     export let BlogComponent;
+    export let chapters;
 
     function formatBlogDate(dateString) {
-        const parsedDate = parse(dateString, 'dd-MM-yyyy', new Date());
+        const parsedDate = parse(dateString, 'yyyy-mm-dd', new Date());
         return format(parsedDate, 'MMMM d, yyyy');
     }
 
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
 
-    export let filename;
     let readTime = "";
     onMount(async () => {
-        readTime = await readMarkdownFile(filename);
+        readTime = await calculateReadTime(BlogComponent);
     });
     $: theme = $isDarkMode ? 'dark' : 'light';
 </script>
@@ -39,8 +39,8 @@
         </div>
     </div>
     
-    <TableOfContents chapters={blogPost.content} />
-    <BlogComponent />
+    <TableOfContents chapters={chapters} />
+     {@html BlogComponent}
 
     <div class = "comments">
         <Giscus
