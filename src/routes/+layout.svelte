@@ -235,4 +235,16 @@
     :global(.wip-container) {
         display:none !important;  
     }
+
+    /* turn off WIP badge */
+    :global(#blog-title) {
+        display:none !important;  
+    }
+
+    :global(p code){
+    display: inline-block; /* Keeps code elements inline while respecting wrapping */
+    white-space: nowrap; /* Prevents individual commands from breaking */
+    margin-right: 4px; /* Adds spacing between commands */
+}
+
 </style>

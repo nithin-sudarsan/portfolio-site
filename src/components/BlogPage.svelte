@@ -28,11 +28,17 @@
 
 <main>
     <BackToBlogs />
-    <div class="blog-metadata">
-        <p>{date}</p>
-        <p style="font-weight: bold;">•</p>
-        <p>{readTime} read</p>
+    <div class="blog-header">
+        <div class="blog-title">
+            <h1>{blogPost.title}</h1>
+        </div>
+        <div class="blog-metadata">
+            <p>{date}</p>
+            <p style="font-weight: bold;">⏺</p>
+            <p>{readTime} read</p>
+        </div>
     </div>
+    
     <TableOfContents chapters={blogPost.content} />
     <BlogComponent />
 
@@ -68,6 +74,13 @@
 
     .comments {
         margin-top: 40px;
+    }
+
+    .blog-header {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Ensure text inside is centered */
     }
 
 </style>
