@@ -13,8 +13,8 @@
     export let chapters;
 
     function formatBlogDate(dateString) {
-        const parsedDate = parse(dateString, 'yyyy-mm-dd', new Date());
-        return format(parsedDate, 'MMMM d, yyyy');
+        const parsedDate = parse(dateString, 'yyyy-MM-dd', new Date());
+        return format(parsedDate, 'MMMM dd, yyyy');
     }
 
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
@@ -34,7 +34,7 @@
         </div>
         <div class="blog-metadata">
             <p>{date}</p>
-            <p style="font-weight: bold;">⏺</p>
+            <p style="font-weight: bold;">•</p>
             <p>{readTime} read</p>
         </div>
     </div>

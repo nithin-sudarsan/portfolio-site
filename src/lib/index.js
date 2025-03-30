@@ -1,3 +1,6 @@
+import { createClient } from '@supabase/supabase-js';
+import { marked } from 'marked';
+
 // place files you want to import through the `$lib` alias in this folder.
 export function capitalize(text) {
     if (!text) return '';
@@ -19,4 +22,116 @@ export function calculateReadTime(content) {
     
     // Return formatted string
     return minutes === 1 ? '1 min' : `${minutes} mins`;
+}
+
+
+const supabaseUrl = 'https://amaanalwvougcmmejbyf.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtYWFuYWx3dm91Z2NtbWVqYnlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzNDU5MTgsImV4cCI6MjA1ODkyMTkxOH0.GFS1vqWBQCSJa-wM5aQIxMyxpoWZZlFqEyG7hbEo_DQ';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+/**
+ * Fetch blogs from the Supabase database.
+ * @param {Object} options - Options for fetching blogs.
+ * @param {number} [options.limit] - Limit the number of blogs fetched.
+ * @param {boolean} [options.groupByYear] - Whether to group blogs by year.
+ * @returns {Promise<Array>} - A promise that resolves to the fetched blogs.
+ */
+export async function fetchBlogsFromDB({ limit = null, groupByYear = false } = {}) {
+    try {
+        const query = supabase
+            .from('blogs') // Replace with your table name
+            .select('title, description, date, link') // Fetch only the required fields
+            .order('date', { ascending: false }); // Sort by date in descending order
+
+        if (limit) {
+            query.limit(limit); // Apply limit if specified
+        }
+
+        const { data: blogs, error } = await query;
+
+        if (error) {
+            console.error('Error fetching blogs:', error);
+            return [];
+        }
+
+        if (groupByYear) {
+            // Group blogs by year
+            const grouped = {};
+            blogs.forEach(blog => {
+                const year = blog.date.split('-')[0]; // Extract year from date
+                if (!grouped[year]) {
+                    grouped[year] = [];
+                }
+                grouped[year].push(blog);
+            });
+
+            return Object.keys(grouped)
+                .sort((a, b) => b - a) // Sort years in descending order
+                .map(year => ({
+                    year,
+                    posts: grouped[year]
+                }));
+        }
+
+        return blogs;
+    } catch (err) {
+        console.error('Error:', err);
+        return [];
+    }
+}
+
+/**
+ * Fetch blog data, chapters, and markdown content from Supabase.
+ * @param {string} link - The unique link identifier for the blog.
+ * @returns {Promise<{ blogPost: object, chapters: Array, blogContent: string }>} - The fetched data.
+ */
+export async function fetchBlogData(link) {
+    try {
+        // Fetch blog metadata
+        const { data: blogData, error: blogError } = await supabase
+            .from('blogs') // Replace with your table name
+            .select('*')
+            .eq('link', link)
+            .single();
+
+        if (blogError) {
+            console.error('Error fetching blog metadata:', blogError);
+            throw new Error('Failed to fetch blog metadata');
+        }
+
+        // Fetch chapters for the blog using blog_id
+        const { data: chapterData, error: chapterError } = await supabase
+            .from('chapters') // Replace with your table name
+            .select('chapter_title, chapter_id')
+            .eq('blog_id', blogData.id); // Use the blog's ID to fetch related chapters
+
+        if (chapterError) {
+            console.error('Error fetching chapters:', chapterError);
+            throw new Error('Failed to fetch chapters');
+        }
+
+        // Map the chapters into the desired format
+        const chapters = chapterData.map(chapter => ({
+            chapterTitle: chapter.chapter_title,
+            chapterId: chapter.chapter_id
+        }));
+
+        // Fetch blog content (Markdown file)
+        const { data: fileData, error: fileError } = await supabase
+            .storage
+            .from('markdown-files') // Replace with your storage bucket name
+            .download(`${link}.md`);
+
+        if (fileError) {
+            console.error('Error fetching markdown file:', fileError);
+            throw new Error('Failed to fetch markdown content');
+        }
+
+        const blogContent = marked.parse(await fileData.text());
+
+        return { blogPost: blogData, chapters, blogContent };
+    } catch (error) {
+        console.error('Error fetching blog data:', error);
+        throw error;
+    }
 }

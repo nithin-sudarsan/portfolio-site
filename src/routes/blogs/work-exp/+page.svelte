@@ -1,12 +1,7 @@
 <script>
-    import { createClient } from '@supabase/supabase-js';
+    import { fetchBlogData } from '$lib';
     import BlogPage from "../../../components/BlogPage.svelte";
     import { onMount } from 'svelte';
-    import { marked } from 'marked';
-
-    const supabaseUrl = 'https://amaanalwvougcmmejbyf.supabase.co';
-    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtYWFuYWx3dm91Z2NtbWVqYnlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzNDU5MTgsImV4cCI6MjA1ODkyMTkxOH0.GFS1vqWBQCSJa-wM5aQIxMyxpoWZZlFqEyG7hbEo_DQ';
-    const supabase = createClient(supabaseUrl, supabaseKey);
 
     let blogPost = null;
     let blogContent = '';
@@ -22,57 +17,18 @@
         }, 500);
 
         // Fetch data
-        fetchData();
+        fetchData('work-exp');
 
         return () => clearInterval(interval); // Cleanup interval on component destroy
     });
 
-    async function fetchData() {
+    async function fetchData(link) {
         try {
-            // Fetch blog metadata
-            const { data: blogData, error: blogError } = await supabase
-                .from('blogs') // Replace with your table name
-                .select('*')
-                .eq('link', 'work-exp')
-                .single();
+            const { blogPost: fetchedBlogPost, chapters: fetchedChapters, blogContent: fetchedBlogContent } = await fetchBlogData(link);
 
-            if (blogError) {
-                console.error(blogError);
-                return;
-            }
-
-            blogPost = blogData;
-
-            // Fetch chapters for the blog using blog_id
-            const { data: chapterData, error: chapterError } = await supabase
-                .from('chapters') // Replace with your table name
-                .select('chapter_title, chapter_id')
-                .eq('blog_id', blogPost.id); // Use the blog's ID to fetch related chapters
-
-            if (chapterError) {
-                console.error(chapterError);
-                return;
-            }
-
-            // Map the chapters into the desired format
-            chapters = chapterData.map(chapter => ({
-                chapterTitle: chapter.chapter_title,
-                chapterId: chapter.chapter_id
-            }));
-
-            // Fetch blog content (Markdown file)
-            const { data: fileData, error: fileError } = await supabase
-                .storage
-                .from('markdown-files') // Replace with your storage bucket name
-                .download('work-exp.md');
-
-            if (fileError) {
-                console.error(fileError);
-                return;
-            }
-
-            blogContent = await fileData.text();
-            blogContent = marked.parse(blogContent);
+            blogPost = fetchedBlogPost;
+            chapters = fetchedChapters;
+            blogContent = fetchedBlogContent;
         } catch (error) {
             console.error('Error loading data:', error);
         } finally {
