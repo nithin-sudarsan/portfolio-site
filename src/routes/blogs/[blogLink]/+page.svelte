@@ -3,13 +3,12 @@
     import BlogPage from "../../../components/BlogPage.svelte";
     import { onMount } from 'svelte';
     export let data; // This will be passed from the route
-    const link = data.blogLink; // Use the blogLink from the route data
 
-    let blogPost = null;
-    let blogContent = '';
-    let chapters = []; // Array to store chapters
     let loading = true; // Loading state
     let loadingDots = ''; // Dots for the loading animation
+    let blogPost = data.blogPost; // To store the blog post data
+    let blogContent = null; // To store the blog content
+    let chapters = []; // Array to store chapters
 
     // Animate the loading dots
     let interval;
@@ -19,28 +18,16 @@
         }, 500);
 
         // Fetch data
-        fetchData(link);
+        blogPost = data.blogPost;
+        blogContent = data.blogContent;
+        chapters = data.chapters;
 
-        return () => clearInterval(interval); // Cleanup interval on component destroy
+        setTimeout(() => {
+             // Set loading to false after the delay
+             loading = false;
+            clearInterval(interval); // Stop the loading animation
+        }, 1500);
     });
-
-    async function fetchData(link) {
-        try {
-            const { blogPost: fetchedBlogPost, chapters: fetchedChapters, blogContent: fetchedBlogContent } = await fetchBlogData(link);
-
-            blogPost = fetchedBlogPost;
-            chapters = fetchedChapters;
-            blogContent = fetchedBlogContent;
-        } catch (error) {
-            console.error('Error loading data:', error);
-        } finally {
-            // Add a delay before hiding the loading state
-            setTimeout(() => {
-                loading = false; // Set loading to false after the delay
-                clearInterval(interval); // Stop the loading animation
-            }, 1000);
-        }
-    }
 </script>
 
 <style>

@@ -25,10 +25,6 @@ export function calculateReadTime(content) {
 }
 
 
-const supabaseUrl = 'https://amaanalwvougcmmejbyf.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtYWFuYWx3dm91Z2NtbWVqYnlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzNDU5MTgsImV4cCI6MjA1ODkyMTkxOH0.GFS1vqWBQCSJa-wM5aQIxMyxpoWZZlFqEyG7hbEo_DQ';
-const supabase = createClient(supabaseUrl, supabaseKey);
-
 /**
  * Fetch blogs from the Supabase database.
  * @param {Object} options - Options for fetching blogs.
@@ -36,8 +32,9 @@ const supabase = createClient(supabaseUrl, supabaseKey);
  * @param {boolean} [options.groupByYear] - Whether to group blogs by year.
  * @returns {Promise<Array>} - A promise that resolves to the fetched blogs.
  */
-export async function fetchBlogsFromDB({ limit = null, groupByYear = false } = {}) {
+export async function fetchBlogsFromDB({ limit = null, groupByYear = false, supabaseURL, supabaseKey } = {}) {
     try {
+        const supabase = createClient(supabaseURL, supabaseKey);
         const query = supabase
             .from('blogs') // Replace with your table name
             .select('title, description, date, link') // Fetch only the required fields
@@ -85,8 +82,9 @@ export async function fetchBlogsFromDB({ limit = null, groupByYear = false } = {
  * @param {string} link - The unique link identifier for the blog.
  * @returns {Promise<{ blogPost: object, chapters: Array, blogContent: string }>} - The fetched data.
  */
-export async function fetchBlogData(link) {
+export async function fetchBlogData(link, supabaseKey, supabaseURL) {
     try {
+        const supabase = createClient(supabaseURL, supabaseKey);
         // Fetch blog metadata
         const { data: blogData, error: blogError } = await supabase
             .from('blogs') // Replace with your table name
@@ -115,7 +113,6 @@ export async function fetchBlogData(link) {
             chapterTitle: chapter.chapter_title,
             chapterId: chapter.chapter_id
         }));
-
         // Fetch blog content (Markdown file)
         const { data: fileData, error: fileError } = await supabase
             .storage
