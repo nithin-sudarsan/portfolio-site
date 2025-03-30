@@ -1,4 +1,8 @@
+<span id="blog-title">
+
 # My Journey at Perfios: Lessons from My First Job
+
+</span>
 
 <span id="chapter-1">
 
@@ -64,8 +68,7 @@ Working at Perfios was a hands-on learning experience. Over nearly 1.5 years, I 
 
 I also gained practical experience with **Git version control**, learning commands like:
 
-- `git rebase`, `git merge`, `git cherry-pick`
-- `git checkout`, `git reset`, `git log`
+`git branch` `git clone`  `git merge`  `git log` `git checkout`  `git cherry-pick` `git pull` `git status` `git push` `git rebase` `git show` `git commit` `git reset`
 
 Using Git daily reinforced its importance in managing large-scale projects and maintaining a clean code history.
 
