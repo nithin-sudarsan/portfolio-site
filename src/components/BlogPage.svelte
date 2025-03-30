@@ -1,6 +1,5 @@
 <script>
     import Giscus from "@giscus/svelte";
-    import blogData from '$lib/blogs.json';
     import {parse, format} from 'date-fns';
     import { capitalize } from "$lib";
     import BackToBlogs from "./BackToBlogs.svelte";

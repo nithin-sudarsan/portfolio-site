@@ -75,7 +75,6 @@
             blogPost={blogPost} 
             BlogComponent={blogContent} 
             chapters={chapters} 
-            filename={"work-exp"} 
         />
     {:else}
     <div class="centered-container">
