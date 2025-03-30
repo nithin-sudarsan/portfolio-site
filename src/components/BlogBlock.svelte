@@ -7,7 +7,7 @@
       <div class="blog-card">
         <div class="content">
           <p class="blog-title">{content.title}</p>
-          <p class="blog-desc">{content.desc}</p>
+          <p class="blog-desc">{content.description}</p>
         </div>
         <div class="arrow-container">
           <div class="arrow-default">

@@ -1,27 +1,26 @@
 <script>
     import Giscus from "@giscus/svelte";
-    import blogData from '$lib/blogs.json';
     import {parse, format} from 'date-fns';
     import { capitalize } from "$lib";
     import BackToBlogs from "./BackToBlogs.svelte";
     import TableOfContents from "./TableOfContents.svelte";
     import { onMount } from "svelte";
     import { isDarkMode } from '$lib/themeStore';
-    import { readMarkdownFile } from "$lib";
+    import { calculateReadTime } from "$lib";
     export let blogPost;
     export let BlogComponent;
+    export let chapters;
 
     function formatBlogDate(dateString) {
-        const parsedDate = parse(dateString, 'dd-MM-yyyy', new Date());
-        return format(parsedDate, 'MMMM d, yyyy');
+        const parsedDate = parse(dateString, 'yyyy-MM-dd', new Date());
+        return format(parsedDate, 'MMMM dd, yyyy');
     }
 
     const date = blogPost ? formatBlogDate(blogPost.date) : '';
 
-    export let filename;
     let readTime = "";
     onMount(async () => {
-        readTime = await readMarkdownFile(filename);
+        readTime = await calculateReadTime(BlogComponent);
     });
     $: theme = $isDarkMode ? 'dark' : 'light';
 </script>
@@ -34,13 +33,13 @@
         </div>
         <div class="blog-metadata">
             <p>{date}</p>
-            <p style="font-weight: bold;">⏺</p>
+            <p style="font-weight: bold;">•</p>
             <p>{readTime} read</p>
         </div>
     </div>
     
-    <TableOfContents chapters={blogPost.content} />
-    <BlogComponent />
+    <TableOfContents chapters={chapters} />
+     {@html BlogComponent}
 
     <div class = "comments">
         <Giscus

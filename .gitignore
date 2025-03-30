@@ -21,3 +21,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 src/lib/fonts.txt
+src/lib/content/*
+src/lib/blogs.json
