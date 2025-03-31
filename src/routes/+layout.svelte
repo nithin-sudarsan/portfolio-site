@@ -229,6 +229,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 15px;
     }
 
     /* turn off WIP badge */
