@@ -1,18 +1,18 @@
 <script>
     import { fetchBlogsFromDB } from '$lib';
     import BlogBlock from './BlogBlock.svelte';
+    import { onMount } from 'svelte';
+    export let data;
 
-    let latestBlogs = []; // To store the latest blogs
+    let latestBlogs = data.latestBlogs; // To store the latest blogs
     let loading = true; // Loading state
 
-    // Fetch the latest blogs
-    async function fetchLatestBlogs() {
-        latestBlogs = await fetchBlogsFromDB({ limit: 5 }); // Fetch the latest 5 blogs
-        loading = false;
-    }
+    onMount(() => {
 
-    // Fetch blogs on component mount
-    fetchLatestBlogs();
+        setTimeout(() => {
+             loading = false;
+        }, 1000);
+    });
 </script>
 
 <main>

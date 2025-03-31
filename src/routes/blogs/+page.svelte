@@ -3,19 +3,12 @@
     import Header from "../../components/Header.svelte";
     import BlogBlock from "../../components/BlogBlock.svelte";
     import SecondaryHeader from "../../components/SecondaryHeader.svelte";
-    import { fetchBlogsFromDB } from '$lib';
+    export let data; 
 
-    let blogsByYear = []; // To store blogs grouped by year
-    let loading = true; // Loading state
-
-    // Fetch blogs grouped by year
-    async function fetchBlogs() {
-        blogsByYear = await fetchBlogsFromDB({ groupByYear: true }); // Fetch blogs grouped by year
-        loading = false;
-    }
-
-    // Fetch blogs on component mount
-    fetchBlogs();
+     // To store blogs grouped by year
+    let loading = data.loading;
+    let blogsByYear = data.blogsByYear;
+    
 </script>
 
 <main>
