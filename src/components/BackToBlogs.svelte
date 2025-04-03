@@ -14,7 +14,7 @@
                 </svg>
             </div>
         </div>
-        <span class="back-text">Back to Blogs</span>
+        <span class="back-text">Blogs</span>
       </div>
     </a>
   </main>
