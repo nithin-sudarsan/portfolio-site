@@ -7,9 +7,6 @@
         <div class="backToHome">
           <a href="/">Home</a>
         </div>
-        <div class="backToBlogs">
-          <a href="/blogs">Blogs</a>
-        </div>
       </div>
     </div>
     <div class="wip-container">
