@@ -22,7 +22,7 @@
                 <div class="year">{yearGroup.year}</div>
                 <div class="blog-list">
                     {#each yearGroup.posts as post}
-                        <BlogBlock content={post} />
+                        <BlogBlock content={post} paper=true/>
                     {/each}
                 </div>
             </div>

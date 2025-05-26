@@ -36,7 +36,7 @@
         </div>
     {:else if latestPapers.length > 0}
         {#each latestPapers as blog}
-            <BlogBlock content={blog} />
+            <BlogBlock content={blog} paper=true/>
         {/each}
     {:else}
         <div class="loading-container">

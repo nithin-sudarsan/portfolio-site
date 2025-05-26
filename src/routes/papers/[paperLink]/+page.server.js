@@ -1,24 +1,24 @@
 import { ENV_SUPABASE_KEY, ENV_SUPABASE_URL } from "$env/static/private";
-import { fetchBlogData } from "$lib";
+import { fetchPaperData } from "$lib";
 
 export const load = async ({ params }) => {
-    let blogPost = null;
+    let paperPost = null;
     let chapters = [];
-    let blogContent = '';
+    let paperContent = '';
     try {
         let loading = true;
         // Fetch blog data using the provided blog link and Supabase credentials
-        let { blogPost, chapters, blogContent } = await fetchBlogData(
-            params.blogLink,
+        let { paperPost, chapters, paperContent } = await fetchPaperData(
+            params.paperLink,
             ENV_SUPABASE_KEY,
             ENV_SUPABASE_URL
         );
 
         // Return the fetched data to the +page.svelte file
         return {
-            blogPost,
+            paperPost,
             chapters,
-            blogContent,
+            paperContent,
         };
     } catch (error) {
         console.error("Error loading data:", error);

@@ -11,7 +11,7 @@
 <main>
     <div class="app-container">
         <div class="grid-background"></div>
-        <div class="dot-pattern"></div>
+        <!-- <div class="dot-pattern"></div> -->
         <slot></slot>
     </div>
     <Footer />

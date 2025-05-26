@@ -1,9 +1,15 @@
 <script>
     export let content;
+    export let paper;
+    let pageType = "blogs"; // Default to "blogs", can be set to "papers" if needed
+    if (paper) {
+        pageType = "papers";
+    }
+    console.log(pageType)
   </script>
   
   <main>
-    <a href="/blogs/{content.link}">
+    <a href="/{pageType}/{content.link}">
       <div class="blog-card">
         <div class="content">
           <p class="blog-title">{content.title}</p>
