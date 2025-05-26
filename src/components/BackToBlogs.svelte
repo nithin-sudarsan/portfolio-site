@@ -1,5 +1,6 @@
 <main>
-    <a href="/blogs">
+    <a href="javascript:history.go(-1)">
+      <!-- To be renamed to "Go Back button" -->
       <div class="back-to-blogs">
         <div class="arrow-container">
             <div class="arrow-default">
@@ -14,7 +15,7 @@
                 </svg>
             </div>
         </div>
-        <span class="back-text">Blogs</span>
+        <span class="back-text">Go back</span>
       </div>
     </a>
   </main>

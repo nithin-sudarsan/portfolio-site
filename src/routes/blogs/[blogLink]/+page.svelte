@@ -67,7 +67,7 @@
         />
     {:else}
     <div class="centered-container">
-        <h2>This blog took a detour 😬</h2>
+        <h2>This page took a detour 😬</h2>
         <p>Feel free to <a href="javascript:history.back()" style="color: inherit;">head back</a></p>
     </div>
     {/if}
