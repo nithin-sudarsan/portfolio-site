@@ -1,5 +1,5 @@
 import { ENV_SUPABASE_KEY, ENV_SUPABASE_URL } from "$env/static/private";
-import { fetchBlogsFromDB } from "$lib";
+import { fetchBlogsFromDB, fetchPapersFromDB} from "$lib";
 
 export async function load() {
     try {
@@ -10,14 +10,20 @@ export async function load() {
             supabaseKey: ENV_SUPABASE_KEY
         });
 
+        const latestPapers = await fetchPapersFromDB({
+            limit: 5,
+            supabaseURL: ENV_SUPABASE_URL,
+            supabaseKey: ENV_SUPABASE_KEY
+        });
+
         return {
-            latestBlogs,
+            latestBlogs,latestPapers,
             loading: false
         };
     } catch (error) {
         console.error("Error fetching blogs:", error);
         return {
-            latestBlogs: [],
+            latestBlogs: [], latestPapers: [],
             loading: false
         };
     }

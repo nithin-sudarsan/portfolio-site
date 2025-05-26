@@ -1,9 +1,15 @@
 <main>
     <div class="header-main">
       <div class="title">
-        <a href="/blogs"><span class="title1">Nithin's blog</span></a>
+        <a href="/"><span class="title1">Nithin's portfolio</span></a>
       </div>
       <div class="nav-links">
+        <div class="backToHome">
+          <a href="/blogs">Blogs</a>
+        </div> |
+        <div class="backToHome">
+          <a href="/papers">Paper reviews</a>
+        </div> |
         <div class="backToHome">
           <a href="/">Home</a>
         </div>
