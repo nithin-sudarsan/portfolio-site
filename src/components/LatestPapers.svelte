@@ -3,7 +3,6 @@
     import BlogBlock from './BlogBlock.svelte';
     import { onMount } from 'svelte';
     export let data;
-    console.log(data);
 
     let latestPapers = data.latestPapers; // To store the latest blogs
     let loading = true; // Loading state

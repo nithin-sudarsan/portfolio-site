@@ -243,9 +243,28 @@
     }
 
     :global(p code){
-    display: inline-block; /* Keeps code elements inline while respecting wrapping */
-    white-space: nowrap; /* Prevents individual commands from breaking */
-    margin-right: 4px; /* Adds spacing between commands */
-}
+        display: inline-block; /* Keeps code elements inline while respecting wrapping */
+        white-space: nowrap; /* Prevents individual commands from breaking */
+        margin-right: 4px; /* Adds spacing between commands */
+    }
+
+    :global(#authors) {
+        font-style: italic;
+    }
+
+    :global(#doi) {
+        opacity: 80%;
+        text-decoration: underline;
+    }
+    :global(#published) {
+        opacity: 80%;
+    }
+
+
+    :global(#published, #doi, #authors) {
+        border-left: rgba(100, 100, 100, 0.4) solid 4px;
+        padding-left: 10px;
+    }
+
 
 </style>
