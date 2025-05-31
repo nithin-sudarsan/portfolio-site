@@ -5,7 +5,6 @@
     if (paper) {
         pageType = "papers";
     }
-    console.log(pageType)
   </script>
   
   <main>

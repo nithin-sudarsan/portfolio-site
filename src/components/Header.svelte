@@ -26,6 +26,14 @@
                 Welcome to my personal site! I'm not the biggest fan of web development 
                 so I'm keeping it simple.
             </p>
+            <div class="nav-links">
+                <div class="backToHome">
+                <a href="/blogs">Blogs</a>
+                </div> |
+                <div class="backToHome">
+                <a href="/papers">Paper reviews</a>
+                </div>
+            </div>
         </div>
         <div class= "header-right">
             <div class = "tooltip">
@@ -111,8 +119,20 @@
         .bmac1 {
             display: none
         }
-        
-        
+  
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.3rem;;
+      font-weight: 500;
+    }
+    .nav-links a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .nav-links a:hover {
+        text-decoration: underline;
     }
 
 </style>

@@ -1,6 +1,6 @@
 <script>
     import { fetchPaperData } from '$lib';
-    import BlogPage from "../../../components/BlogPage.svelte";
+    import PaperReviewPage from "../../../components/PaperReviewPage.svelte";
     import { onMount } from 'svelte';
     export let data; // This will be passed from the route
 
@@ -60,7 +60,7 @@
             <h2>Hold on{loadingDots}</h2>
         </div>
     {:else if paperPost && paperContent && chapters.length > 0}
-        <BlogPage 
+        <PaperReviewPage 
             blogPost={paperPost} 
             BlogComponent={paperContent} 
             chapters={chapters} 
