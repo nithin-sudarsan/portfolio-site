@@ -266,5 +266,10 @@
         padding-left: 10px;
     }
 
+    :global(#subheading) {
+        border-left: rgba(100, 100, 100, 0.6) solid 4px;
+        padding-left: 10px;
+    }
+
 
 </style>
