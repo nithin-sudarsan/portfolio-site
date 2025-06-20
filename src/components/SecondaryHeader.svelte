@@ -9,6 +9,9 @@
         </div> |
         <div class="backToHome">
           <a href="/papers">Paper reviews</a>
+        </div> |
+        <div class="backToHome">
+          <a href="/cv">CV</a>
         </div>
       </div>
     </div>
