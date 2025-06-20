@@ -12,6 +12,9 @@
     <p>
         Additionally, I had the opportunity to mentor new hires through code reviews and pair programming sessions, helping them navigate our complex data analysis codebase.
     </p>
+    <p>
+        Feel free to check out my <a href="/cv" style="text-decoration: underline;">CV</a>!
+    </p>
     <hr>
 
 </main>
